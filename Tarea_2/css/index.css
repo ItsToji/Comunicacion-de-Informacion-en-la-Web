@@ -13,7 +13,7 @@ html {
 }
 
 :root {
-  --header-height: 100px;
+  --header-height: 90px;
 }
 
 section {
@@ -208,10 +208,9 @@ footer p {
     gap: 50px;
   }
 
-  html {
-    font-family: "Roboto", sans-serif;
-    scroll-behavior: smooth;
-    scroll-padding-top: var(--header-height);
+  .cursoTama {
+    height: 200px;
+    object-fit: contain;
   }
 
   :root {
