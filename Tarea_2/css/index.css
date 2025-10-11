@@ -207,4 +207,18 @@ footer p {
   .cursos {
     gap: 50px;
   }
+
+  html {
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
+  }
+
+  :root {
+    --header-height: 80px;
+  }
+
+  section {
+    scroll-margin-top: calc(var(--header-height) + 0.5rem);
+  }
 }
