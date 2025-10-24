@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.containerTextEvento {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/back1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100dvh;
+}
+
+.containerTextEvento h1 {
+  color: white;
+  font-size: 50px;
+  margin: 0;
+}
+
+.containerTextEvento img {
+  width: 400px;
+  height: auto;
+}
+
+.containerTextEvento button {
+  background-color: #b517f8;
+  box-shadow: 0 0 12px #b517f8;
+  color: #fff;
+  transition: 0.3s;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.containerTextEvento button:hover {
+  background-color: #ff1fff;
+  box-shadow: 0 0 12px #ff1fff;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.containerCol1 {
+  gap: 50px;
+}
+
+.containerInfoEvento {
+  background-color: #0f0f0f;
+  color: white;
+  padding: 80px 0;
+}
+
+.containerTextInfo {
+  gap: 25px;
+}
+
+.containerTextInfo h2,
+p {
+  margin: 0;
+}
+
+.containerRowFecha {
+  padding: 40px 0;
+}
+
+.containerTextFecha {
+  gap: 50px;
+}
+
+.containerImgFecha img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.containerImgFecha img:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.containerTextLugar {
+  gap: 50px;
+}
+
+.containerMaps iframe {
+  width: 500px;
+  height: 340px;
+  border: 0;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.containerMaps iframe:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.containerTextPrecio {
+  gap: 50px;
+}
+
+.containerImgPrecio img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.containerImgPrecio img:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.containerInfoDjs {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 80px 0;
+}
+
+.containerTextDjs {
+  gap: 25px;
+}
+
+.containerRowDjs {
+  padding-top: 50px;
+}
+
+.containerDjs {
+  gap: 20px;
+}
+
+.containerDjs h3 {
+  margin: 0;
+}
+
+.containerDjs img {
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.containerDjs img:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.containerIconsDjs {
+  gap: 25px;
+  font-size: 25px;
+}
+
+.containerIconsDjs a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.containerIconsDjs a:hover {
+  color: #b517f8;
+  transition: color 0.3s;
+}
+
+.containerMainNormas {
+  background-color: #0f0f0f;
+  color: white;
+  padding: 80px 0;
+}
+
+.containerInfoNormas h2,
+p {
+  margin: 0;
+}
+
+.containerInfoNormas {
+  gap: 25px;
+}
+
+.containerNormas {
+  padding-top: 30px;
+}
+
+.containerNormas p {
+  width: 70%;
+}
+
+.containerNormas i {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.containerFooter {
+  background-color: #0f0f0f;
+  color: white;
+  padding: 20px 0;
+}
+
+.containerMainForm {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 80px 0;
+}
+
+.containerTextForm {
+  gap: 25px;
+}
+
+.containerTextForm h2,
+p {
+  margin: 0;
+}
+
+.containerForm {
+  margin-top: 30px;
+}
+
+.containerForm form {
+  width: 500px;
+  gap: 20px;
+}
+
+.containerInputs {
+  width: 100%;
+}
+
+.containerForm button {
+  background-color: #b517f8;
+  box-shadow: 0 0 12px #b517f8;
+  color: #fff;
+  transition: 0.3s;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.containerForm button:hover {
+  background-color: #ff1fff;
+  box-shadow: 0 0 12px #ff1fff;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+#btnTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #b517f8;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 0 10px #b517f8;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+#btnTop:hover {
+  background-color: #ff1fff;
+  box-shadow: 0 0 12px #ff1fff;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: #b517f8;
+  color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 0 10px #b517f8;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.whatsapp-float:hover {
+  background-color: #ff1fff;
+  box-shadow: 0 0 12px #ff1fff;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Oculto por defecto: no animar ni mostrar al cargar */
+.animate-on-scroll {
+  opacity: 0;
+}
+/* Cuando se active (el JS agregará animate__animated) */
+.animate-on-scroll.animate__animated {
+  opacity: 1;
+}
+
+/*Media Queries*/
+
+@media (max-width: 480px) {
+  .containerTextEvento h1 {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .containerTextEvento img {
+    width: 200px;
+    height: auto;
+  }
+
+  .containerRow {
+    gap: 40px;
+  }
+
+  .containerTextInfo {
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .containerTextInfo,
+  .containerTextDjs,
+  .containerInfoNormas p {
+    width: 90%;
+  }
+
+  .containerRowFecha,
+  .containerTextFecha,
+  .containerTextLugar,
+  .containerTextPrecio {
+    gap: 15px;
+    text-align: center;
+  }
+
+  .containerImgFecha img,
+  .containerImgPrecio img {
+    width: 300px;
+    height: auto;
+  }
+
+  .containerMaps iframe {
+    width: 300px;
+    height: 200px;
+  }
+
+  .containerRowDjs {
+    gap: 50px;
+  }
+
+  .containerDjs img {
+    width: auto;
+    height: 350px;
+  }
+
+  .containerInfoNormas {
+    text-align: center;
+  }
+
+  .containerInputs {
+    width: 90%;
+  }
+
+  .containerFooter {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .containerNormas p {
+    width: 100%;
+  }
+
+  .containerFooter p {
+    width: 60%;
+    font-size: 14px;
+  }
+
+  #btnTop {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background-color: #b517f8;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 0 10px #b517f8;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    background-color: #b517f8;
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    box-shadow: 0 0 10px #b517f8;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+}
