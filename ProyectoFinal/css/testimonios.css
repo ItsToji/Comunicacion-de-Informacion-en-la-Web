@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+:root {
+  --header-height: 37.3px;
+}
+
+section {
+  scroll-margin-top: calc(var(--header-height) + 0.5rem);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #006aea;
+  color: white;
+  padding: 20px 0;
+  margin-top: 25px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.dropdown-toggle {
+  color: gray !important;
+}
+
+.dropText {
+  color: gray !important;
+}
+
+.dropText:hover {
+  color: white !important;
+  background-color: #006aea !important;
+  transition: 0.3s ease;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item .nav-link {
+  color: gray !important;
+  margin: 0 10px;
+  padding: 8px 15px !important;
+  transition: 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+  color: white !important;
+  background-color: #006aea !important;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/********************************/
+.containerText {
+  padding: 25px 0;
+  gap: 15px;
+  width: 89%;
+}
+
+.containerText h1,
+.containerText p {
+  margin: 0;
+}
+
+.carousel {
+  width: 90%;
+  height: 534px;
+}
+
+.carousel-item {
+  text-align: center;
+  height: 500px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  gap: 15px;
+}
+
+.carousel-inner {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.carousel-inner:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.carousel-item p {
+  width: 90%;
+}
+
+.carousel-item p,
+.carousel-item h5 {
+  margin: 0;
+}
+
+.carousel-item img {
+  border-radius: 50%;
+  width: 250px;
+  max-height: 250px;
+  height: fit-content;
+  object-fit: cover;
+}
+
+#carouselExampleSlidesOnly .carousel-item {
+  transition: opacity 1.5s ease-in-out;
+}
+
+.carousel-innerTestimonios {
+  box-shadow: none !important;
+  transition: none !important;
+  border-radius: none !important;
+}
+
+.carouselEmpresas {
+  width: 100% !important;
+  height: 325px !important;
+}
+
+.containerEmpresas {
+  text-align: center !important;
+  height: 325px !important;
+  width: 100% !important;
+  border: none !important;
+}
+
+.containerEmpresas img {
+  text-align: center !important;
+  height: 100% !important;
+  width: auto !important;
+  border-radius: 10px;
+  border: none !important;
+}
+
+.containerTextFuturo {
+  gap: 15px;
+}
+
+.containerTextFuturo h2,
+.containerTextCol h2 {
+  margin: 0;
+}
+
+.containerRow{
+  padding: 30px 0;
+}
+
+#btnTop {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  background-color: white;
+  color: #006aea;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 0 10px #006aea;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+#btnTop:hover {
+  background-color: white;
+  box-shadow: 0 0 12px #006aea;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-on-scroll.animate__animated {
+  opacity: 1;
+}
+
+/*Media Queries */
+@media (max-width: 360px) {
+  .nav-item .nav-link {
+    margin: 10px 0;
+  }
+
+  :root {
+    --header-height: 80px;
+  }
+
+  section {
+    scroll-margin-top: calc(var(--header-height) + 0.5rem);
+  }
+
+  .containerText p {
+    font-size: 16px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .carouselEmpresas {
+    height: 250px !important;
+  }
+
+  .containerEmpresas {
+    height: 250px !important;
+  }
+
+  .carousel-item img {
+    border-radius: 50%;
+    width: 180px;
+    max-height: 180px;
+    height: fit-content;
+    object-fit: cover;
+  }
+
+  .containerEmpresas img {
+    text-align: center !important;
+    height: 100% !important;
+    width: auto !important;
+    border-radius: 10px;
+    border: none !important;
+  }
+
+  .containerRowTest {
+    margin-bottom: 15px;
+  }
+
+  #btnTop {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    background-color: white;
+    color: #006aea;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 0 10px #006aea;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+
+  footer p {
+    width: 95%;
+  }
+
+  footer {
+    margin-top: 30px;
+  }
+}

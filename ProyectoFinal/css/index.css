@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+:root {
+  --header-height: 37px;
+}
+
+section {
+  scroll-margin-top: calc(var(--header-height) + 0.5rem);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #006aea;
+  color: white;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.dropdown-toggle {
+  color: gray !important;
+}
+
+.dropText {
+  color: gray !important;
+}
+
+.dropText:hover {
+  color: white !important;
+  background-color: #006aea !important;
+  transition: 0.3s ease;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item .nav-link {
+  color: gray !important;
+  margin: 0 10px;
+  padding: 8px 15px !important;
+  transition: 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+  color: white !important;
+  background-color: #006aea !important;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.backImage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/bienvenida.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 93.2vh;
+  color: white;
+}
+
+.backImage h1 {
+  font-size: 40px;
+}
+
+.backImage p {
+  font-size: 18px;
+}
+
+.containerSecciones {
+  padding: 50px 0;
+  gap: 30px;
+}
+
+.titulo {
+  margin: 0px 0;
+}
+
+.titulo p {
+  margin: 0;
+}
+
+.ofertas {
+  gap: 125px;
+}
+
+.card-body h3 {
+  text-align: center;
+}
+
+.card-body p {
+  text-align: center;
+}
+
+.texts p {
+  padding: 20px;
+}
+
+.valores {
+  gap: 125px;
+}
+
+.valoresIns {
+  background-color: #e4e4e480;
+}
+
+.backMision {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(../img/misión.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.backVision {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(../img/visión.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.cursos {
+  gap: 250px;
+  margin-bottom: 30px;
+}
+
+.cursoTama {
+  margin-bottom: 15px;
+}
+
+.backvideo {
+  position: relative;
+  width: 100%;
+  height: 81.2vh;
+  overflow: hidden;
+}
+
+.video-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(50%);
+}
+
+.contenido-video {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.contenido-video h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.contenido-video p {
+  font-size: 18px;
+}
+
+#btnTop {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  background-color: white;
+  color: #006aea;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 0 10px #006aea;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+#btnTop:hover {
+  background-color: white;
+  box-shadow: 0 0 12px #006aea;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-on-scroll.animate__animated {
+  opacity: 1;
+}
+
+/*Media Queries */
+@media (max-width: 360px) {
+  footer p {
+    width: 95%;
+  }
+
+  .nav-item .nav-link {
+    margin: 10px 0;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .backImage {
+    height: 94vh;
+  }
+  .backImage h1 {
+    font-size: 30px;
+  }
+  .backImage p {
+    font-size: 15px;
+  }
+
+  .backMision {
+    padding: 0 18px;
+  }
+  .backVision {
+    padding: 0 18px;
+  }
+
+  .ofertas {
+    gap: 50px;
+  }
+
+  .titulo {
+    width: 90%;
+  }
+
+  .valores {
+    gap: 50px;
+  }
+
+  .cursos {
+    gap: 50px;
+  }
+
+  .cursoTama {
+    height: 200px;
+    object-fit: contain;
+  }
+
+  :root {
+    --header-height: 80px;
+  }
+
+  section {
+    scroll-margin-top: calc(var(--header-height) + 0.5rem);
+  }
+
+  #btnTop {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    background-color: white;
+    color: #006aea;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 0 10px #006aea;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+}
